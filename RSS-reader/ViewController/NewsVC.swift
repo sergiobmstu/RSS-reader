@@ -94,7 +94,7 @@ extension NewsVC: ViewProtocol {
     }
     
     func handleErrorCode(_ code: Int) {
-        let alert = UIAlertController(title: "Error", message: "Code: \(code)", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error \(code)", message: "Check your internet connection", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
